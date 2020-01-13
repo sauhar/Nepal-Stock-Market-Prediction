@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+{% load static from staticfiles %}
+
+<html>
+<head>
+<title>Nepal Stock Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+
+    background-image: url( "{% static 'home/icon/11111.jpg' %}");
+    background-size: 100%;
+    margin: 0;
+    }
+    </body>
+
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 2px solid #ddd;
+  padding: 16px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<table id="customers">
+  <tr>
+    <th>Company</th>
+    <th>Short form</th>
+    <th>Results</th>
+  </tr>
+  <tr>
+    <td>Agriculture Development Bank</td>
+    <td> ADBL </td>
+    <td><a href="/result?company=ADBL">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Chilime Hydro power Company Limited </td>
+    <td>CHCL</td>
+    <td><a href="/result?company=CHCL">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Nabil Bank Limited </td>
+    <td>NABIL</td>
+    <td><a href="/result?company=NABIL">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Nepal Life Insurance Company Limited</td>
+    <td>NLIC</td>
+    <td><a href="/result?company=NLIC">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Nepal Doorsanchar Company Limited </td>
+    <td>NTC</td>
+    <td><a href="/result?company=NTC">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Oriental Hotel Limited</td>
+    <td>OHL</td>
+    <td><a href="/result?company=OHL">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Prime Life Insurance Company Limited</td>
+    <td>PLIC</td>
+    <td><a href="/result?company=PLIC">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Nepal SBI Bank Limited </td>
+    <td>SBI</td>
+    <td><a href="/result?company=SBI">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Standard Chartered Bank Nepal Limited</td>
+    <td>SCB</td>
+    <td>  <a href="/result?company=SCB">View Result</a></td>
+  </tr>
+  <tr>
+    <td>Soaltee Hotel Limited</td>
+    <td>SHL</td>
+    <td> <a href="/result?company=SHL">View Result</a></td>
+  </tr>
+</table>
+</body>
+</html>
+

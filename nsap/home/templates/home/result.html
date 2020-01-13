@@ -1,0 +1,26 @@
+
+{% load static from staticfiles %}
+
+<style>
+body {
+   
+    background-image: url( "{% static 'home/icon/wallpaper.jpg' %}");
+    background-size: 100%;
+    margin: 0;
+    }
+    </body>
+    </style>
+    
+   {% block content %}
+  {% for row in rows %}
+    <tr>
+        <td><p><b><font size = "3">Date As On: {{row.5}}</font></b></p></td>
+        <td><p><b><font size = "5">{{row.1}}</font></b></p></td>
+        <td><p><b><font size = "3"> Predicted Opening Value For Tommorow: {{ row.0}} </font></b></p></td>
+        <td><p><b><font size = "3"> Normalised Root mean square error:{{ row.4}}</font></b></p> </td>
+        <td><img src="static/home/img{{ row.3}}" width="1000" height="500"/></td>
+       
+       
+    </tr>
+{% endfor %}
+{% endblock content %}

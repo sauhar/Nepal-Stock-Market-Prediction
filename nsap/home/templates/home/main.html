@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html>
+<head>
+<title>Nepal Stock Prediction</title>
+<style>
+body {
+   
+    background-image: url( "{% static 'home/icon/stock market.jpg' %}");
+    background-size: 100%;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 21%;
+    background-color:#5882FA;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: Black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+h2{
+font-size:40px;
+}
+
+h3{
+font-size:35px;
+}
+
+h4{
+font-size:20px;
+color:Black;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+ 
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about" >About Us</a></li>
+  <li>  <a href="predictions/"> Predictions</a></li>
+  <li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2><b>WELCOME TO NEPAL STOCK PREDICTION</b></h2>
+ 
+ 
+</div>
+
+</body>
+</html>
